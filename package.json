@@ -1,0 +1,28 @@
+{
+  "name": "audio-player",
+  "version": "0.0.1",
+  "description": "music video",
+  "main": "main.js",
+  "scripts": {
+    "dev": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/predatorL/audio-player.git"
+  },
+  "keywords": [
+    "electron",
+    "react",
+    "sqlite",
+    "music"
+  ],
+  "author": "lhy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/predatorL/audio-player/issues"
+  },
+  "homepage": "https://github.com/predatorL/audio-player#readme",
+  "devDependencies": {
+    "electron": "^5.0.8"
+  }
+}
