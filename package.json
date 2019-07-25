@@ -2,7 +2,7 @@
   "name": "audio-player",
   "version": "0.0.1",
   "description": "music video",
-  "main": "main.js",
+  "main": "./app/main.js",
   "scripts": {
     "dev": "electron ."
   },
