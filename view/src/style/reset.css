@@ -1,0 +1,192 @@
+/* RESET */
+
+html {
+    color: #333;
+    background: #fff;
+}
+
+body,
+body div,
+body dl,
+body dt,
+body dd,
+body ul,
+body ol,
+body li,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body pre,
+body code,
+body form,
+body fieldset,
+body legend,
+body input,
+body button,
+body textarea,
+body p,
+body blockquote,
+body th,
+body td {
+    margin: 0;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var,
+optgroup {
+    font-style: normal;
+    font-weight: 400
+}
+
+li {
+    list-style: none
+}
+
+caption {
+    text-align: left
+}
+
+abbr,
+acronym {
+    border: 0;
+    font-variant: normal
+}
+
+sup {
+    vertical-align: text-top
+}
+
+sub {
+    vertical-align: text-bottom
+}
+
+input,
+textarea,
+select,
+button,
+option {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit
+}
+
+/*html5 reset*/
+
+section,
+article,
+aside,
+header,
+footer,
+nav,
+dialog,
+figure {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    background-color: #fff;
+}
+
+
+/* CSS3 anim */
+
+.has-trans {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.clearfix {
+    display: inline-block
+}
+
+* html .clearfix {
+    height: 1%
+}
+
+.clearfix {
+    display: block
+}
+
+.hidden {
+    display: none !important;
+}
+
+xmp {
+    display: none;
+}
+
+input::placeholder{
+    color: #ccc !important;
+}
+
+input::-webkit-input-placeholder {
+    /* WebKit browsers*/
+    color: #ccc;
+}
+
+input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18*/
+    color: #ccc;
+}
+
+input::-moz-placeholder {
+    /* Mozilla Firefox 19+*/
+    color: #ccc;
+}
+
+
+input:-ms-input-placeholder {
+    /* Internet Explorer 10+*/
+    color: #ccc;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 0;
+}
+
+::-webkit-scrollbar,::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #e0e0e0;
+    width: 10px;
+    border-radius: 10px;
+}
+

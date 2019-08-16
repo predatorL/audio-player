@@ -139,6 +139,8 @@
     ]
   },
   "devDependencies": {
-    "@types/react-router-dom": "^4.3.4"
+    "@types/react-router-dom": "^4.3.4",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0"
   }
 }
