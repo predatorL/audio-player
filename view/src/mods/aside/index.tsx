@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const View: React.FC = () => {
   return (
-    <aside id="app-aside">
+    <aside className="app-aside">
         <section className="item">
             <header>我的音乐</header>
             <ul>

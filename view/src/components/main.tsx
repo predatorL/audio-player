@@ -1,13 +1,14 @@
 import React from 'react';
 
 interface Props {
-    children?: React.ReactChildren,
+    children?: any,
     className?: string
 }
-
-const View: React.FC = (props: Props) => {
+// 为啥bug
+const View = function (props: Props) {
+  let {className = '', children, ...other} = props;
   return (
-    <main className={`app-container`}>{props.children}</main>
+    <main className={`app-container ${className}`} {...other}>{children}</main>
   );
 }
 

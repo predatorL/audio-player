@@ -2,10 +2,12 @@ import React from 'react';
 import Main from '@coms/main';
 
 class View extends React.Component {
-    render() {
+    render () {
         return (
-            <Main className="local">local</Main>
-        );
+            <Main className="local">
+                download
+            </Main>
+          );
     }
 }
 

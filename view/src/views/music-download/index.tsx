@@ -1,9 +1,14 @@
 import React from 'react';
+import Main from '@coms/main';
 
-const View: React.FC = () => {
-  return (
-    <main>download</main>
-  );
+class View extends React.Component {
+    render () {
+        return (
+            <Main className="download">
+                download
+            </Main>
+          );
+    }
 }
 
 export default View;
