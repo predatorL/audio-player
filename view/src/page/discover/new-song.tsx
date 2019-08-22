@@ -1,12 +1,12 @@
 import React from 'react';
-import Main from '@coms/main';
+import Section from './_mod/section';
 
 class View extends React.Component {
     render () {
         return (
-            <Main className="history">
-                download
-            </Main>
+            <Section className="banner">
+                banner
+            </Section>
           );
     }
 }

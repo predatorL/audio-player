@@ -26,7 +26,6 @@ const View: React.FC = () => {
             <div className="divider">我的音乐</div>
             <NavItem to="/local">本地歌曲</NavItem>
             <NavItem to="/download">下载歌曲</NavItem>
-            <NavItem to="/history">播放历史</NavItem>
         </section>
     </aside>
   );
