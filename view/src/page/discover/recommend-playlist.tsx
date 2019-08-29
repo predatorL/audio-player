@@ -1,25 +1,33 @@
+/**
+ * @filename 推荐歌单
+ */
 import React from 'react';
 import Api from '@/api';
 import Section from './_mod/section';
 
-class View extends React.Component {
-    constructor(props: any) {
-        super(props);
-        this.state = {
-            list: []
-        }
-    }
+import InitHook from './_mod/init-hook';
 
-    render () {
-        const {list} : {list: object[]} = this.state;
-        return (
-            <Section className="banner">
-                {
-                    list
-                }
-            </Section>
-          );
+let _prop = {
+    className: 'playlist',
+    fetchData: Api.playlist.getRecommend.bind(this, {
+        limit: 9
+    }),
+    format: (source: any) => {
+        return source.status === 200 ? source.data.result : [];
     }
+}
+
+function View()  {
+    return (
+        <InitHook {..._prop} render={(item: any, i: number) => {
+            return (
+                <figure key={item.id} className="item">
+                    <img src={item.picUrl} alt=""/>
+                    <figcaption>{item.name}</figcaption>
+                </figure>
+            )
+        }}/>
+    )
 }
 
 export default View;

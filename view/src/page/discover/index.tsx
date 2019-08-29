@@ -6,6 +6,7 @@ import PlayList from './recommend-playlist';
 import PrivateContent from './private-content';
 import NewSong from './new-song';
 import MV from './recommend-mv';
+import DJprogram from './djprogram';
 
 class View extends React.Component {
     render () {
@@ -16,6 +17,7 @@ class View extends React.Component {
                 <PrivateContent />
                 <NewSong />
                 <MV />
+                <DJprogram />
             </Main>
           );
     }
