@@ -1,23 +1,17 @@
 import React from 'react';
 import Main from '@coms/main';
+import {Route} from 'react-router-dom';
 // section
-import Banner from './banner';
-import PlayList from './recommend-playlist';
-import PrivateContent from './private-content';
-import NewSong from './new-song';
-import MV from './recommend-mv';
-import DJprogram from './djprogram';
+import Personalized from './personalized';
+
 
 class View extends React.Component {
     render () {
         return (
             <Main className="discover">
-                <Banner />
-                <PlayList />
-                <PrivateContent />
-                <NewSong />
-                <MV />
-                <DJprogram />
+                <Route exact path="/" component={Personalized} />
+                <Route exact path="/discover" component={Personalized} />
+                <Route exact path="/discover/personalized" component={Personalized} />
             </Main>
           );
     }

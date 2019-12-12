@@ -1,5 +1,5 @@
 import React from 'react';
-import Section from './_mod/section';
+import Section from '../_mod/section';
 import Api from '@/api';
 import { Carousel } from 'antd';
 

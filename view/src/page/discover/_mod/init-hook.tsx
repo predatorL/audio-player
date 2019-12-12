@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Section from './section';
+import {Link} from 'react-router-dom';
 
 export default function (props: any) {
     const [list, setList] = useState([]);
@@ -11,6 +12,9 @@ export default function (props: any) {
     }, [])
     return (
         <Section className={props.className}>
+            <header className="part-name">
+                <Link to={props.to}> { props.title } ></Link>
+            </header>
             <div className="flex-box">
                 {list.map(props.render)}
             </div>

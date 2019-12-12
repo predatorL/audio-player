@@ -3,9 +3,11 @@
  */
 import React from 'react';
 import Api from '@/api';
-import InitHook from './_mod/init-hook';
+import InitHook from '../_mod/init-hook';
 
 let _prop = {
+    to: '/discover/private-content',
+    title: '独家放送',
     className: 'private-content',
     fetchData: Api.discover.getPrivatecontent,
     format: (source: any) => {

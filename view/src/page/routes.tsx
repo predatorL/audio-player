@@ -15,7 +15,7 @@ const View: React.FC = () => {
   return (
     <React.Fragment>
         <Route exact path="/" component={pageDiscover} />
-        <Route exact path="/discover" component={pageDiscover} />
+        <Route path="/discover" component={pageDiscover} />
         <Route exact path="/favorite" component={pageFavorite} />
         <Route exact path="/friends" component={pageFriends} />
         <Route exact path="/playlist" component={pagePlaylist} />

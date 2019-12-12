@@ -3,11 +3,12 @@
  */
 import React from 'react';
 import Api from '@/api';
-import Section from './_mod/section';
 
-import InitHook from './_mod/init-hook';
+import InitHook from '../_mod/init-hook';
 
 let _prop = {
+    to: '/discover/playlist',
+    title: '推荐歌单',
     className: 'playlist',
     fetchData: Api.playlist.getRecommend.bind(this, {
         limit: 9

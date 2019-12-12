@@ -3,9 +3,11 @@
  */
 import React from 'react';
 import Api from '@/api';
-import InitHook from './_mod/init-hook';
+import InitHook from '../_mod/init-hook';
 
 let _prop = {
+    to: '/discover/mv',
+    title: '推荐MV',
     className: 'mv',
     fetchData: Api.discover.getMv.bind(this, {
         limit: 4
